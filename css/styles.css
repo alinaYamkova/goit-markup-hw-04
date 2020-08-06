@@ -141,6 +141,9 @@ h1,h2,h3,h4,h5 {
     fill: currentColor;
 }
 
+.contact-link:hover > .header-svg {
+    fill: var(--accent-color);
+}
 .site-nav a:hover,
 .site-auth a:hover,
 .site-nav a:focus,
@@ -165,8 +168,8 @@ h1,h2,h3,h4,h5 {
     padding-bottom: 200px;
 
     background-image: linear-gradient( 
-        rgba(47, 48, 58, 0.8), 
-        rgba(47, 48, 58, 0.8) ), url(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4) ), url(
         ../images/Header.jpg);
     background-color: #C4C4C4;    
     background-repeat: no-repeat;
@@ -253,12 +256,6 @@ h1,h2,h3,h4,h5 {
     margin: 0;
 }
 
-/* .features-box > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}  */
-
 .icon-features {
     width: 270px;
     height: 120px;
@@ -267,6 +264,9 @@ h1,h2,h3,h4,h5 {
     border-radius: 4px;
 }
 
+.icon-features > .features-svg {
+    background-size: contain;
+}
 
 /* Чем мы занимаемся */
 
@@ -374,17 +374,13 @@ h1,h2,h3,h4,h5 {
     /* outline: 1px solid blue; */
 }
 
-.icon-link:hover,
-.icon-link:focus {
-    background-color: var(--accent-color);
-}
-
-.icon-svg {
+.icon-link > .icon-svg {
+    
     width: 20px;
     height: 20px;
 }
 
-.icon-svg:hover {
+.icon-link > .icon-svg:hover {
     fill: var(--accent-color);
 }
 .icon-link:hover,
@@ -492,7 +488,7 @@ address {
     margin-top: 12px
 }
 
-.footer-box .button.secondary>.icon-send {
+.footer-box .button.secondary >.icon-send {
     display: inline-flex;
     align-items: center;
     justify-content: center;
