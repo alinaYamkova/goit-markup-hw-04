@@ -138,6 +138,7 @@ h1,h2,h3,h4,h5 {
     margin-right: 10px;
     width: 16px;
     height: 11.2px;
+    fill: currentColor;
 }
 
 .site-nav a:hover,
@@ -167,7 +168,7 @@ h1,h2,h3,h4,h5 {
         rgba(47, 48, 58, 0.8), 
         rgba(47, 48, 58, 0.8) ), url(
         ../images/Header.jpg);
-    background-color: steelblue;    
+    background-color: #C4C4C4;    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -410,14 +411,13 @@ h1,h2,h3,h4,h5 {
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    /* color: ; */
 }
 
 .icon-client-link:hover {
-    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
-.client-svg:hover {
+.icon-client-link:hover > .client-svg {
     fill: var(--accent-color);
 }
 /* FOOTER */
