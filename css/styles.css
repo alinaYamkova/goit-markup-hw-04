@@ -371,24 +371,26 @@ h1,h2,h3,h4,h5 {
     width: 44px;
     height: 44px;
     color: var(--text-color);
-    /* outline: 1px solid blue; */
 }
 
 .icon-link > .icon-svg {
-    
     width: 20px;
     height: 20px;
 }
 
-.icon-link > .icon-svg:hover {
-    fill: var(--accent-color);
+.icon-link:hover > .icon-svg {
+    fill: var(--primary-white-color);
+
 }
 .icon-link:hover,
 .icon-link:focus {
     color: var(--accent-color);
 }
 
+
+
 /* CLIENTS */
+
 
 .clients-list-box  {
     display: flex;
@@ -473,6 +475,10 @@ address {
     background-color: var(--accent-color);
 }
 
+.icon-link:hover > .icon-svg {
+    fill: var(--primary-white-color);
+}
+
 .conteiner.footer .text-footer {
     margin-top: 0;
     margin-bottom: 20px;    
@@ -498,7 +504,9 @@ address {
     background-image: url(../images/svg/icon.send.svg);
 }
 
+
 /* ПОРТФОЛИО */
+
 
 .button.filters {
     width: auto;
@@ -576,6 +584,7 @@ address {
 .projects-item > .card {
    padding: 20px 24px;
 }
+
 .effects-title {
     display: none;
     font-weight: 400;
