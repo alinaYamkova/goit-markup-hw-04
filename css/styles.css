@@ -257,6 +257,7 @@ h1,h2,h3,h4,h5 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
 .features-box > p {
     margin: 0;
 }
@@ -271,6 +272,8 @@ h1,h2,h3,h4,h5 {
 
 .features-svg {
     background-size: contain;
+    width: 70px;
+    height: 70px;
     fill: currentColor;
 }
 
@@ -383,6 +386,11 @@ h1,h2,h3,h4,h5 {
     color: var(--text-color);
 }
 
+.icon-link:hover,
+.icon-link:focus {
+    color: var(--accent-color);
+}
+
 .icon-svg {
     width: 20px;
     height: 20px;
@@ -391,11 +399,6 @@ h1,h2,h3,h4,h5 {
 
 .icon-link:hover > .icon-svg {
     fill: var(--primary-white-color);
-}
-
-.icon-link:hover,
-.icon-link:focus {
-    color: var(--accent-color);
 }
 
 
@@ -422,7 +425,8 @@ h1,h2,h3,h4,h5 {
     border-radius: 4px;
 }
 
-.icon-client-link:hover {
+.icon-client-link:hover,
+.icon-client-link:focus {
     border: 1px solid var(--accent-color);
 }
 
@@ -430,7 +434,8 @@ h1,h2,h3,h4,h5 {
     fill: currentColor;
 }
 
-.icon-client-link:hover > .client-svg {
+.icon-client-link:hover > .client-svg,
+.icon-client-link:focus > .client-svg {
     fill: var(--accent-color);
 }
 
@@ -492,7 +497,8 @@ address {
     fill: var(--primary-white-color);
 }
 
-.social-links-footer:hover > .icon-link {
+.icon-link:hover,
+.icon-link:focus {
     background-color: var(--accent-color);
 }
 
@@ -500,7 +506,6 @@ address {
     margin-top: 0;
     margin-bottom: 20px;    
     text-transform: uppercase;
-
     line-height: 1.14;
     font-weight: 700;
     letter-spacing: 0.03em;
