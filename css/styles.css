@@ -109,7 +109,6 @@ h1,h2,h3,h4,h5 {
 
 .link-item > .contact-link,
 .link-item > .link {
-    /* margin-left: auto; */
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -135,6 +134,9 @@ h1,h2,h3,h4,h5 {
 }
 
 .header-svg {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
     width: 16px;
     height: 11.2px;
@@ -144,14 +146,17 @@ h1,h2,h3,h4,h5 {
 .contact-link:hover > .header-svg {
     fill: var(--accent-color);
 }
-.site-nav a:hover,
-.site-auth a:hover,
-.site-nav a:focus,
-.site-auth a:focus {
+
+.site-nav .contact-link:hover,
+.site-auth .contact-link:hover,
+.site-nav .contact-link:focus,
+.site-auth .contact-link:focus {
     color: var(--accent-color) 
 }
 
+
 /* HERO */
+
 
 .conteiner.hero-conteiner {
     display: block;
@@ -264,11 +269,14 @@ h1,h2,h3,h4,h5 {
     border-radius: 4px;
 }
 
-.icon-features > .features-svg {
+.features-svg {
     background-size: contain;
+    fill: currentColor;
 }
 
+
 /* Чем мы занимаемся */
+
 
 .section-title {
     font-size: 36px;
@@ -310,7 +318,9 @@ h1,h2,h3,h4,h5 {
 }
 
 
+
 /* НАША КОМАНДА */
+
 
 .conteiner.team {
     background-color: #F5F4FA;
@@ -373,15 +383,16 @@ h1,h2,h3,h4,h5 {
     color: var(--text-color);
 }
 
-.icon-link > .icon-svg {
+.icon-svg {
     width: 20px;
     height: 20px;
+    fill: currentColor;
 }
 
 .icon-link:hover > .icon-svg {
     fill: var(--primary-white-color);
-
 }
+
 .icon-link:hover,
 .icon-link:focus {
     color: var(--accent-color);
@@ -415,10 +426,17 @@ h1,h2,h3,h4,h5 {
     border: 1px solid var(--accent-color);
 }
 
+.client-svg {
+    fill: currentColor;
+}
+
 .icon-client-link:hover > .client-svg {
     fill: var(--accent-color);
 }
+
+
 /* FOOTER */
+
 
 footer {
     background: #2F303A;
@@ -456,7 +474,6 @@ address {
 
 .footer-box.join {
     margin-top: 12px;
-
 }
 
 .links-box-footer {
@@ -471,12 +488,12 @@ address {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-links-footer > .icon-link:hover {
-    background-color: var(--accent-color);
+.icon-svg.footer-svg {
+    fill: var(--primary-white-color);
 }
 
-.icon-link:hover > .icon-svg {
-    fill: var(--primary-white-color);
+.social-links-footer:hover > .icon-link {
+    background-color: var(--accent-color);
 }
 
 .conteiner.footer .text-footer {
