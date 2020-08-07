@@ -80,9 +80,7 @@ h1,h2,h3,h4,h5 {
 
 /* SITE-NAU -AUTH */
 
-.site-nav .link-item > a:hover {
-    color: var(--accent-color);
-}
+
 .navigation, 
 .site-nav,
 .site-auth {
@@ -90,6 +88,12 @@ h1,h2,h3,h4,h5 {
     align-items: center;
     margin-right: auto; 
 }
+/* .site-nav .link-item:hover {
+    color: var(--accent-color);
+}
+.navigation >.link-item:hover {
+    color: var(--accent-color);
+} */
 
 .navigation .logo {
     width: 153px;
@@ -98,8 +102,8 @@ h1,h2,h3,h4,h5 {
     margin-right: 85px;
 }
 
-.link-item > .contact-link,
-.link-item > .link {
+.link-item .contact-link,
+.link-item .link {
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -128,19 +132,21 @@ h1,h2,h3,h4,h5 {
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    --color1: var(--text-color);
 }
 
 .contact-link > .header-svg:hover {
-    --color1: var(--accent-color);
     --color4: var(--accent-color);
 }
 
-.site-nav .contact-link:hover,
+.site-nav .link:hover,
+.site-nav .link:focus,
 .site-auth .contact-link:hover,
-.site-nav .contact-link:focus,
 .site-auth .contact-link:focus {
     color: var(--accent-color) 
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
 }
 
 
@@ -352,6 +358,10 @@ h1,h2,h3,h4,h5 {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-member:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .team-member:nth-child(4n) {
     margin-right: 0;
 }
@@ -544,6 +554,7 @@ address {
 
 .projects-item:hover > .card {
     box-sizing: border-box;
+    max-width: 100%;
     box-shadow: 
     0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.06), 
