@@ -137,11 +137,11 @@ h1,h2,h3,h4,h5 {
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    fill: var(--text-color);
+    --color4: var(--text-color);
 }
 
 .contact-link:hover > .header-svg {
-    fill: var(--accent-color);
+    --color4: var(--accent-color);
 }
 
 .site-nav .contact-link:hover,
@@ -380,7 +380,6 @@ h1,h2,h3,h4,h5 {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    color: var(--text-color);
 }
 
 .icon-link:hover,
@@ -394,7 +393,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .icon-link:hover > .icon-svg {
-    fill: var(--color4, #FFFFFF);
+    --color4: #FFFFFF;
 }
 
 
@@ -433,21 +432,16 @@ h1,h2,h3,h4,h5 {
 
 /* FOOTER */
 
-
-footer {
-    background: #2F303A;
-    outline: 2px solid #000000;
-}
-
 .conteiner.footer {
     display: flex;
+    justify-content: space-evenly;
     padding-top: 72px;
     padding-bottom: 60px;
     font-size: 14px;
     line-height: 1.71;
-    justify-content: space-between;
-    color: var(--primary-white-color);
-}  
+    background: #2F303A;
+    color: var(--primary-white-color); 
+}
 
 .logo.logo-footer {    
     color: var(--primary-white-color);
@@ -485,7 +479,7 @@ address {
 }
 
 .icon-svg.footer-svg {
-    fill: var(--color4, #FFFFFF);
+    --color4: #FFFFFF;
 }
 
 .icon-link:hover,
